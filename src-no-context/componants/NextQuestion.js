@@ -1,0 +1,28 @@
+import React from "react";
+
+export default function NextQuestion({
+  disPatch,
+  answer,
+  index,
+  numQuestions,
+}) {
+  if (answer === null) return null;
+  if (index < numQuestions - 1)
+    return (
+      <button
+        className="btn btn-ui"
+        onClick={() => disPatch({ type: "nextQuestion" })}
+      >
+        Next
+      </button>
+    );
+  if (index === numQuestions - 1)
+    return (
+      <button
+        className="btn btn-ui"
+        onClick={() => disPatch({ type: "finish" })}
+      >
+        Confirm
+      </button>
+    );
+}

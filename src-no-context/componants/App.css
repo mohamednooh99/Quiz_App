@@ -1,0 +1,214 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34;
+  min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App .main {
+  margin: auto;
+  max-width: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+/* HTML: <div class="loader"></div> */
+/* .loader {
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #ffffff 90%, #ffffff00);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+  text-align: center !important;
+}
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+} */
+
+/* HTML: <div class="loader"></div> */
+/* .loader {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  clip-path: inset(-45px);
+  box-shadow: -60px 15px, -60px 15px, -60px 15px;
+  transform: translateY(-15px);
+  animation: l19 1s infinite linear;
+}
+@keyframes l19 {
+  16.67% {
+    box-shadow: -60px 15px, -60px 15px, 19px 15px;
+  }
+  33.33% {
+    box-shadow: -60px 15px, 0px 15px, 19px 15px;
+  }
+  40%,
+  60% {
+    box-shadow: -19px 15px, 0px 15px, 19px 15px;
+  }
+  66.67% {
+    box-shadow: -19px 15px, 0px 15px, 60px 15px;
+  }
+  83.33% {
+    box-shadow: -19px 15px, 60px 15px, 60px 15px;
+  }
+  100% {
+    box-shadow: 60px 15px, 60px 15px, 60px 15px;
+  }
+} */
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  clip-path: inset(-45px);
+  box-shadow: -60px 15px, -60px 15px, -60px 15px;
+  transform: translateY(-15px);
+  animation: l19 1s infinite linear;
+}
+@keyframes l19 {
+  16.67% {
+    box-shadow: -60px 15px, -60px 15px, 19px 15px;
+  }
+  33.33% {
+    box-shadow: -60px 15px, 0px 15px, 19px 15px;
+  }
+  40%,
+  60% {
+    box-shadow: -19px 15px, 0px 15px, 19px 15px;
+  }
+  66.67% {
+    box-shadow: -19px 15px, 0px 15px, 60px 15px;
+  }
+  83.33% {
+    box-shadow: -19px 15px, 60px 15px, 60px 15px;
+  }
+  100% {
+    box-shadow: 60px 15px, 60px 15px, 60px 15px;
+  }
+}
+
+.error {
+  background-color: #1c2029;
+  border-radius: 7px;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+/* start screen page */
+.btn {
+  background-color: #1c2029;
+  border-radius: 40px;
+  text-align: center;
+  padding: 20px 30px;
+  font-size: large;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  width: 50%;
+}
+.btn:hover {
+  background-color: #cecece27;
+}
+
+.btn-option {
+  background-color: #cecece27;
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  text-align: left;
+  font-size: medium;
+  transition: ease-in-out 0.3s;
+}
+.btn-option:hover {
+  margin-left: 50px;
+  background-color: #1c2029;
+}
+.main-points {
+  display: flex;
+  justify-content: space-between;
+}
+.answer {
+  margin-left: 50px;
+}
+.correct {
+  background-color: #61dafbdc;
+}
+.wronge {
+  background-color: rgb(201, 147, 0);
+}
+
+.progress progress {
+  color: red;
+  width: 100%;
+}
+
+.progress progress::-webkit-progress-value {
+  background-color: red;
+}
+
+.progress progress::-moz-progress-bar {
+  background-color: red;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+.timer {
+  background-color: #1c2029;
+  border-radius: 40px;
+  text-align: center;
+  padding: 20px 30px;
+  font-size: large;
+  color: #fff;
+  border: 0;
+}
