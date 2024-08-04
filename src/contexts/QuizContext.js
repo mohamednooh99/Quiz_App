@@ -85,7 +85,7 @@ export default function QuizProvider({ children }) {
   useEffect(function () {
     fetch("https://mohamednooh99.github.io/test_API/question.json")
       .then((res) => res.json())
-      .then((data) => disPatch({ type: "dataReceiver", payload: data }))
+      .then((data) => disPatch({ type: "dataReceiver", payload: data.questions }))
       .catch((err) => disPatch({ type: "dataFailed" }));
   }, []);
   return (
