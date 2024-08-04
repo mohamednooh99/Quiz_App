@@ -83,7 +83,7 @@ export default function QuizProvider({ children }) {
   );
 
   useEffect(function () {
-    fetch("http://localhost:8000/questions")
+    fetch("https://mohamednooh99.github.io/test_API/question.json")
       .then((res) => res.json())
       .then((data) => disPatch({ type: "dataReceiver", payload: data }))
       .catch((err) => disPatch({ type: "dataFailed" }));
