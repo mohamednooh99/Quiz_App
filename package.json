@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mohamednooh99.github.io/Quiz_App",
   "name": "questions-list",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +16,8 @@
   },
   "scripts": {
     "start": "craco start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
@@ -39,6 +42,8 @@
     ]
   },
   "devDependencies": {
-    "@craco/craco": "^7.1.0"
+    "@craco/craco": "^7.1.0",
+    "gh-pages": "^6.1.1",
+    "react-router-dom": "^6.25.1"
   }
 }
